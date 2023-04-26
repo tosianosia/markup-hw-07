@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Шапка страницы -->
@@ -28,7 +29,7 @@
           </a>
 
           <!-- Ссылки на другие страницы -->
-          <ul class="site-nav list">
+          <ul class="site-nav">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link">Студия</a>
             </li>
@@ -48,7 +49,7 @@
         </nav>
 
         <!-- Почта и телефон -->
-        <ul class="contacts-header list">
+        <ul class="contacts-header">
           <li class="contacts-header__item">
             <a href="mailto:info@devstudio.com" class="contacts-header__link">
               <svg class="contacts-header__icon" width="16" height="12">
@@ -80,7 +81,7 @@
           <h1 class="visually-hidden">Наши работы</h1>
 
           <!-- Фильтр -->
-          <ul class="filter list">
+          <ul class="filter">
             <li class="filter__item">
               <button
                 class="filter__btn filter__btn--current"
@@ -107,7 +108,7 @@
           ⚠️ ультраграмотно - набором радио-кнопок-->
 
           <!-- Works -->
-          <ul class="works list">
+          <ul class="works">
             <li class="works__card">
               <a href="" class="works__link">
                 <div class="works__thumb">
@@ -349,7 +350,7 @@
             г. Киев, пр-т Леси Украинки, 26
 
             <!-- Почта и телефон -->
-            <ul class="contacts-footer list">
+            <ul class="contacts-footer">
               <li class="contacts-footer__item">
                 <a href="mailto:info@example.com" class="contacts-footer__link">
                   info@example.com
@@ -370,11 +371,11 @@
           </address> -->
         </div>
 
-        <div>
+        <div class="page-footer__social">
           <b class="page-footer__text">присоединяйтесь</b>
 
           <!-- Социальные сети -->
-          <ul class="social-networks list">
+          <ul class="social-networks">
             <li class="social-networks__item">
               <a
                 href=""
@@ -420,6 +421,42 @@
               </a>
             </li>
           </ul>
+        </div>
+
+        <div class="page-footer__form">
+          <b class="page-footer__text">Подпишитесь на рассылку</b>
+
+          <!-- Форма подписки -->
+          <form class="subscribe">
+            <div class="subscribe__field">
+              <input
+                type="email"
+                class="subscribe__input"
+                name="email"
+                id="email"
+                placeholder=" "
+              />
+              <label for="email" class="subscribe__label">E-mail</label>
+            </div>
+
+            <!-- избавляемся от id -->
+            <!-- <label class="subscribe__field">
+              <input
+                type="email"
+                class="subscribe__input"
+                name="email"
+                placeholder=" "
+              />
+              <span class="subscribe__label">E-mail</span>
+            </label> -->
+
+            <button class="button button--with-icon" type="submit">
+              Подписаться
+              <svg class="button__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>

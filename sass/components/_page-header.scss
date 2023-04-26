@@ -1,0 +1,11 @@
+.page-header {
+  border-bottom: 1px solid $header-border-color;
+}
+
+.page-header__inner {
+  display: flex;
+}
+
+.page-header__nav {
+  @include centeredFlex();
+}

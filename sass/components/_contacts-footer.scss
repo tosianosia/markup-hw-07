@@ -1,0 +1,13 @@
+.contacts-footer {
+  @extend %list;
+  margin-top: 9px;
+}
+
+.contacts-footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.contacts-footer__link {
+  color: $footer-link-color;
+  text-decoration: none;
+}

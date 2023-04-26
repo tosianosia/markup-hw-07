@@ -1,0 +1,36 @@
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $footer-bg-color;
+}
+
+.page-footer__inner {
+  @include centeredFlex($cross-axis: baseline);
+}
+
+.page-footer__address {
+  width: 231px;
+}
+
+.page-footer__logo {
+  color: $primary-white-color;
+}
+
+.page-footer__social {
+  width: 206px;
+  margin-left: 70px;
+}
+
+.page-footer__text {
+  display: block;
+  margin-bottom: 20px;
+
+  color: $primary-white-color;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.page-footer__form {
+  width: 570px;
+  margin-left: auto;
+}
